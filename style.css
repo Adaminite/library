@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#content{
+    flex: auto;
+}
+
+#footer, #header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+
+    /* Temporary to separate columns
+
+    */
+
+    background-color: blueviolet;
+}
+
+#content{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card{
+    flex: 0 1 25%;
+
+    padding: 10px;
+    margin: 10px;
+}
