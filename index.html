@@ -14,14 +14,37 @@
             <h1> Library </h1>
         </div>
 
-        <div id = "btn-div">
-            <button id = "add">
-                Add a new book
-            </button>
-        </div>
-        <div id = "content">
 
+
+        <div id = "content">
+            <form>
+
+                <div>
+                    <label for="author">Author: </label> 
+                    <input type = "text" name = "author" required>
+                </div>
+
+                <div>
+                    <label for="title">Title:   </label>
+                    <input type = "text" name = "title" required>
+                </div>
+
+                <div>
+                    <label for="pages">Pages: </label>
+                    <input type="number" name = "pages" required>
+                </div>
+                
+                <div class = "submit">
+                    <input type="submit" id = "add" value = "Add New Book"> 
+                </div>
+            
+            </form>
+
+            <div id = "cards">
+
+            </div>
         </div>
+
 
         <div id = "footer">
             Copyright &copy; Omar Niazi 2022
