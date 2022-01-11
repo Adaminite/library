@@ -1,9 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     margin: 0;
     height: 100vh;
 
     display: flex;
     flex-direction: column;
+
+    
 }
 
 #content{
@@ -32,6 +40,44 @@ body{
 }
 
 #content{
+    display: flex;
+}
+
+form{
+    flex: 0 1 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    background-color: burlywood;
+    gap: 32px;
+
+    padding: 20px;
+}
+label{
+    width: 54px;
+    display: inline-block;
+
+    font-size: 17px;
+}
+
+input{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#cards{
+    flex: 1 0 300px;
+
     display: flex;
     flex-wrap: wrap;
 
