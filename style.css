@@ -44,7 +44,7 @@ body{
 }
 
 form{
-    flex: 0 1 300px;
+    flex: 0 0 300px;
 
     display: flex;
     flex-direction: column;
@@ -81,9 +81,16 @@ input{
     display: flex;
     flex-wrap: wrap;
 
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+
 }
 .card{
     flex: 0 1 25%;
+
+    min-width: 100px;
 
     padding: 10px;
     margin: 10px;
