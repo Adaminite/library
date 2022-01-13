@@ -1,14 +1,19 @@
 let library = [];
 
+class Book{
+    author;
+    title;
+    numPages;
+    isRead;
 
-function Book(author, title, numPages, isRead){
+    constructor(author, title, numPages, isRead){
+        this.author = author;
+        this.title = title;
+        this.numPages = numPages;
+        this.isRead = isRead;
+    }
 
-    this.author = author;
-    this.title = title;
-    this.numPages = numPages;
-    this.isRead = isRead;
-
-    this.changeRead = function(){
+    changeRead(){
         if(this.isRead === true){
             this.isRead = false;
         }
@@ -17,12 +22,11 @@ function Book(author, title, numPages, isRead){
         }
     }
 
-    this.asString = function(){
+    asString(){
         return `${this.author}-${this.title}-${this.numPages}`;
     }
 
 }
-
 const form = document.querySelector("form");
 
 form.addEventListener('submit', (e) => {
